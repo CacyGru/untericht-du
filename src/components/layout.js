@@ -6,9 +6,16 @@ import './layout.scss'
 const Layout = (props) => {
     return (
         <>
-         <Header />
-         {props.children}  
+        <div className="container">
+        <Header />
+            <div className="content">
+            
+         {props.children} 
+            </div>
+        
+        
          <Footer /> 
+         </div> 
         </>
     )
 }
